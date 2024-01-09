@@ -1,0 +1,25 @@
+pipeline{
+agent any
+stages{
+stage('first statge'){
+steps{
+git branch: 'main', url: 'https://github.com/SriThriveni/mock2.git'
+}
+}
+stage('second stage'){
+steps{
+ build 'maven job'
+}
+}
+stage('third stage'){
+steps{
+echo 'this testing stage'
+}
+}
+stage('fourth stage')
+{
+steps{
+echo 'this is deloy stage'
+}
+}
+}
