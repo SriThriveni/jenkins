@@ -3,7 +3,7 @@ agent any
 stages{
 stage('first statge'){
 steps{
-git branch: 'main', url: 'https://github.com/SriThriveni/mock2.git'
+echo 'first phase'
 }
 }
 stage('second stage'){
