@@ -3,12 +3,11 @@ agent any
 stages{
 stage('first statge'){
 steps{
-echo 'first phase'
-}
+git branch: 'main', url: 'https://github.com/SriThriveni/mock2.git'}
 }
 stage('second stage'){
 steps{
- echo 'this is bulid phase'
+build 'first job'
 }
 }
 stage('third stage'){
